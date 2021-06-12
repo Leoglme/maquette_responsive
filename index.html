@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Maquette responsive 2</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <script src="https://kit.fontawesome.com/b574b73ebd.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<header>
+    <section id="top-nav">
+        <div class="nav-social-media">
+            <img src="assets/20.png" alt="logo facebook">
+            <img src="assets/19.png" alt="logo twitter">
+        </div>
+    </section>
+    <section id="navbar">
+        <div class="navbar__container">
+            <div class="safy-logo">
+                <img class="logo" src="assets/18.jpg.png" alt="logo entreprise safy">
+            </div>
+            <nav class='dropdown-container'>
+                <ul class="nav__ul first-drop">
+                    <li><a class="nav__link" href='#'>Home</a></li>
+                    <li class='sub-menu sub__menu--book'><a class="nav__link first__book" href='#'>Book</a><i class="fas fa-chevron-down first__book--chevron"></i>
+                        <ul class="nav__ul ul-destinations book">
+                            <li><a class="nav__link nav__link--below" href='#'>Book 1</a></li>
+                            <li><a class="nav__link nav__link--below" href='#'>Book 2</a></li>
+                            <li><a class="nav__link nav__link--below" href='#'>Book 3</a></li>
+                        </ul>
+                    </li>
+
+                    <li class='sub-menu sub__menu--destinations'><a class="nav__link first__destinations" href='#'>Destinations</a><i class="fas fa-chevron-down first__destinations--chevron"></i>
+                        <ul class="nav__ul ul-destinations pays">
+                            <li><a class="nav__link nav__link--below" href='#france'>France</a></li>
+                            <li><a class="nav__link nav__link--below" href='#brazil'>Brazil</a></li>
+                            <li><a class="nav__link nav__link--below" href='#algeria'>Algeria</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav__link" href='#'>Prices</a></li>
+                    <li><a class="nav__link" href='#'>Alerts</a></li>
+                    <li><a class="nav__link" href='#'>Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+</header>
+
+<!-- partie carousel -->
+<section id="carousel-diapo">
+    <!-- Slideshow container -->
+    <div class="carousel__container">
+        <div class="mySlides fade">
+            <div class="carousel__index">1 / 6</div>
+            <img src="assets/6.jpg" style="width:100%" alt="photo aéroport">
+            <div class="carousel__index--text"><p class="carousel__index--para">Tips to travel around the world !</p></div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="carousel__index">2 / 6</div>
+            <img src="assets/7.jpg" style="width:100%" alt="photo balade en campagne">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="carousel__index">3 / 6</div>
+            <img src="assets/8.jpg" style="width:100%" alt="photo voyage">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="carousel__index">4 / 6</div>
+            <img src="assets/9.jpg" style="width:100%" alt="photo surf">
+        </div>
+
+        <div class="mySlides fade">
+            <div class="carousel__index">5 / 6</div>
+            <img src="assets/10.jpg" style="width:100%" alt="photo aéroport">
+
+        </div>
+
+        <div class="mySlides fade">
+            <div class="carousel__index">6 / 6</div>
+            <img src="assets/11.jpg" style="width:100%" alt="photo aéroport">
+        </div>
+
+        <!-- Bouton suivant/précédent-->
+        <a class="prev" onclick="plusSlides(-1)"><img class="carousel__arrow--left" src="assets/left.png" alt="circle left arrow"></a>
+        <a class="next" onclick="plusSlides(1)"><img class="carousel__arrow--right" src="assets/right.png" alt="circle right arrow"></a>
+    </div>
+    <br>
+
+    <!-- Bouton dot-->
+    <div class="dot-btn">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+    </div>
+</section>
+<!-- partie card -->
+<section id="sec-info">
+    <div id="info_cards">
+        <div class="container-card">
+            <div class="card">
+                <img class="card__img" src="assets/13.png" alt="logo feu de camp">
+                <h2 class="card__title">Safe, structured and amazing application</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit tempor scelerisque. Vestibulum
+                imperdiet varius nunc. Phasellus egestas molestie lorem, vitae rutrum tellus lacinia sit amet.
+                Vestibulum tempor convallis mi sed dignissim. Mauris pretium, dui in congue ornare.</p>
+            <a class="card__link" href="/">more info</a>
+        </div>
+
+        <div class="container-card">
+            <div class="card">
+                <img class="card__img" src="assets/17.png" alt="logo tente">
+                <h2 class="card__title">The sun is shining today, book your trip</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit tempor scelerisque. Vestibulum
+                imperdiet varius nunc. Phasellus egestas molestie lorem, vitae rutrum tellus lacinia sit amet.
+                Vestibulum tempor convallis mi sed dignissim. Mauris pretium, dui in congue ornare.</p>
+            <a class="card__link" href="/">more info</a>
+        </div>
+
+        <div class="container-card">
+            <div class="card">
+                <img class="card__img" src="assets/12.png" alt="logo pate d'ours">
+                <h2 class="card__title">Meet new people and live more intensely</h2>
+            </div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit tempor scelerisque. Vestibulum
+                imperdiet varius nunc. Phasellus egestas molestie lorem, vitae rutrum tellus lacinia sit amet.
+                Vestibulum tempor convallis mi sed dignissim. Mauris pretium, dui in congue ornare.</p>
+            <a class="card__link" href="/">more info</a>
+        </div>
+    </div>
+    <!--  2ème partie destinations-->
+    <div id="destinations">
+        <div class="pres">
+            <h2 class="pres__h2">Destinations</h2>
+            <div class="divider"></div>
+        </div>
+        <div id="france" class="img-container">
+            <div class="pays__container">
+                <img class="drapeau" src="assets/3.jpg" alt="drapeau de la france">
+                <h3 class="pays__title">France</h3>
+            </div>
+
+            <div id="brazil"  class="pays__container">
+                <img class="drapeau" src="assets/4.jpg" alt="drapeau du.png brésil">
+                <h3 class="pays__title">Brazil</h3>
+            </div>
+
+            <div id="algeria" class="pays__container">
+                <img class="drapeau" src="assets/5.jpg" alt="drapeau algérie">
+                <h3 class="pays__title">Algeria</h3>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Partie About\FAQ-->
+<section id="faq">
+    <div class="faq-container">
+        <div class="aboutUs">
+            <h2 class="title2">About Us</h2>
+            <div class="divider faq-divider"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, felis ac fermentum
+                pellentesque, dui dolor lobortis magna, at porttitor eros dui id turpis. Maecenas condimentum enim a
+                eros euismod facilisis. Aenean orci risus, fermentum vel finibus et, aliquam ac lacus. Aliquam
+                sollicitudin malesuada feugiat.<br><br><br>
+
+                Nam lacinia, tellus eget cursus malesuada, ligula lacus tempus ligula, eget tempor justo felis at neque.
+                Donec porta ut erat et laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Cras ac
+                pretium quam, vel venenatis elit. Integer elementum diam sed ex dignissim, a euismod tortor gravida.
+                Aliquam iaculis varius neque, id efficitur massa scelerisque ac. Vestibulum dui risus, feugiat quis
+                ligula quis, varius auctor metus. Donec viverra purus hendrerit est scelerisque.</p>
+        </div>
+        <div class="whyUs">
+            <h2 class="title2">Why Us</h2>
+            <div class="whyUs__content divider faq-divider"></div>
+            <div class="whyUs__content">
+                <img class="whyUs-img" src="assets/14.png" alt="logo boussole">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit tempor scelerisque.
+                    Vestibulum imperdiet varius nunc.</p>
+            </div>
+
+            <div class="whyUs__content">
+                <img class="whyUs-img" src="assets/15.png" alt="logo carte">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit tempor scelerisque.
+                    Vestibulum imperdiet varius nunc.</p>
+            </div>
+
+            <div class="whyUs__content">
+                <img class="whyUs-img" src="assets/16.png" alt="logo velo">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent blandit tempor scelerisque.
+                    Vestibulum imperdiet varius nunc.</p>
+            </div>
+        </div>
+    </div>
+    <div class="travel-container">
+        <div class="travel">
+            <h2 class="title2">How to travel ?</h2>
+            <div class="divider faq-divider travel-divider"></div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ullamcorper, felis ac fermentum
+                pellentesque, dui dolor lobortis magna, at porttitor eros dui id turpis. Maecenas condimentum.</p>
+            <button class="sub-btn">Subscribe</button>
+
+        </div>
+    </div>
+</section>
+<footer id="footer">
+    <div class="link-container">
+        <a class="footer__link" href="/">Home</a>
+        <a class="footer__link" href="/">Book</a>
+        <a class="footer__link" href="/">Destinations</a>
+        <a class="footer__link" href="/">Prices</a>
+        <a class="footer__link" href="/">Alerts</a>
+        <a class="footer__link" href="/">Contact</a>
+        <p class="copyright">© There is no birds here  Look around.</p>
+    </div>
+
+
+</footer>
+<script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

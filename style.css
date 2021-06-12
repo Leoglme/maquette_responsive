@@ -1,0 +1,847 @@
+/* GÉNÉRAL */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* HEADER TOP */
+#top-nav {
+    height: 60px;
+    width: 100%;
+    background: #ccffff;
+    display: flex;
+    align-items: center;
+}
+
+#navbar {
+    height: 130px;
+    max-height: 130px;
+    width: 100%;
+    background: #9a99ff;
+    border-color: #453c34;
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+.nav-social-media {
+    margin-left: 365px;
+}
+
+/* HEADER NAVBAR */
+.navbar__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.dropdown-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav__ul.ul-destinations {
+    top: 35px;
+    display: none;
+}
+
+.pays {
+    margin-left: 15px;
+}
+
+.ul-destinations.book {
+    margin-left: 0;
+
+}
+
+.nav__ul {
+    list-style: none;
+    display: flex;
+    position: absolute;
+    z-index: 15;
+}
+
+.nav__link, .first__destinations, .first__book {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    text-decoration: none;
+    outline: none;
+}
+
+.nav__link:hover, .first__destinations:hover, .first__book:hover {
+    color: #515151;
+}
+
+.fas {
+    width: 16px;
+    text-align: center;
+    float: right;
+    color: #e8e3cf;
+    cursor: pointer;
+}
+
+.ul-destinations {
+    background-color: #ebebeb;
+}
+
+.nav__link--below {
+    background: #f8f8f8;
+    border-left: 4px solid transparent;
+    padding: 10px 20px;
+}
+
+.nav__link--below:hover {
+    background: #ebebeb;
+    border-left: 4px solid #d165ff;
+    color: #d165ff;
+}
+
+.sub-menu {
+    display: flex;
+    align-items: center;
+}
+
+.first__book:active, .first__destinations:active {
+    outline: none;
+}
+
+/* partie carousel */
+#carousel-diapo {
+    background: #ccffff;
+    border-bottom: 1px solid #453c34;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.carousel__container {
+    max-width: 1000px;
+    position: relative;
+    margin: 30px auto auto auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all .5s ease-in-out;
+}
+
+.carousel__arrow--left:active, .carousel__arrow--right:active {
+    border-radius: 50%;
+    width: 49px;
+    height: 49px;
+    background: #d13535a6;
+}
+
+.carousel__index--text {
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 4px;
+    font-weight: bold;
+}
+
+.carousel__index--para {
+    font-size: 15px;
+    color: #fff;
+    margin-left: 20px;
+}
+
+.carousel__index {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot-btn {
+    margin-bottom: 15px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 23px;
+    width: 23px;
+    margin: 0 2px;
+    display: inline-block;
+    background: url(assets/dot.png);
+}
+
+.active, .dot:hover {
+    background: url(assets/dot-active.png);
+}
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* partie card info */
+#sec-info {
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#info_cards {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background: #9999ff;
+    display: flex;
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.card__title {
+    padding-top: 15px;
+    font-size: 20px;
+    color: #ffffff
+}
+
+.card__img {
+    margin: 15px;
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 300px;
+    margin: 10px;
+    line-height: 20px;
+}
+
+.card__link {
+    text-decoration: none;
+    color: #d93e39;
+}
+
+/*2ème partie destinations*/
+
+.img-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pays__container {
+    margin: 10px;
+    border: 1px solid #d9d9d9;
+    height: 150px;
+    border-radius: 2px;
+}
+
+.drapeau {
+    border: 5px solid #fff;
+}
+
+#destinations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pres__h2 {
+    color: #453c34;
+    margin-top: 40px;
+}
+
+.divider {
+    width: 58.8em;
+    height: 1px;
+    background: #d9d9d9;
+    margin-top: 20px;
+}
+
+.pays__title {
+    color: #453c34;
+    margin-top: 10px;
+}
+
+/*Partie About\FAQ*/
+#faq {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 745px;
+    background: #ccffff;
+    border-color: #453c34;
+    border-style: solid;
+    border-width: 1px 0;
+}
+
+.faq-container {
+    display: flex;
+    line-height: 20px;
+}
+
+.aboutUs, .whyUs {
+    width: 29em;
+    margin: 15px;
+}
+
+.whyUs-faq-divider {
+    margin: unset;
+}
+
+.whyUs__content {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.whyUs-img {
+    margin-right: 10px;
+}
+
+.faq-divider {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.travel-container {
+    width: 60em;
+}
+
+.title2 {
+    color: #453c34;
+}
+
+.sub-btn {
+    cursor: pointer;
+    padding: 16px 26px;
+    font-size: 15px;
+    border: none;
+    border-radius: 3px;
+    background: #7aa763;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
+}
+
+.sub-btn:hover {
+    background: #7aa763ab;
+}
+
+/*Partie footer*/
+#footer {
+    height: 130px;
+    background: #9999ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-container {
+    width: 960px;
+}
+
+.footer__link {
+    text-decoration: none;
+    margin-right: 25px;
+    color: black;
+}
+
+.footer__link:focus {
+    color: #3b3b3b;
+}
+
+.copyright {
+    color: #74665b;
+    margin-top: 25px;
+}
+
+/*MEDIA QUERIES*/
+/*Format moyen écran / tablette*/
+@media screen and (max-width: 1250px) {
+    .nav-social-media {
+        margin-left: 2%;
+    }
+
+    .safy-logo {
+        position: relative;
+        right: 15em;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .first-drop {
+        right: 5em;
+    }
+
+    .safy-logo {
+        margin-left: 5%;
+    }
+}
+
+/*Format téléphone / tablette*/
+@media screen and (max-width: 940px) {
+    #navbar {
+        height: 200px;
+        max-height: 200px;
+    }
+
+    .navbar__container {
+        flex-direction: column;
+    }
+
+    .safy-logo {
+        right: 17em;
+    }
+
+    .first-drop {
+        right: 25em;
+        top: 20%;
+    }
+
+    .carousel__container {
+        max-width: 840px;
+    }
+
+    .container-card, .card {
+        width: 260px;
+    }
+
+    .divider {
+        width: 51.25em;
+    }
+
+    .drapeau {
+        width: 250px;
+        height: 138px;
+    }
+
+    .aboutUs, .whyUs, .divider.faq-divider {
+        width: 22em;
+    }
+
+    .travel-container, .divider.travel-divider, .link-container {
+        width: 46em;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .logo {
+        width: 80%;
+    }
+
+    .safy-logo, .first-drop {
+        left: auto;
+        right: auto;
+    }
+
+    #navbar {
+        height: 180px;
+    }
+
+    .carousel__container {
+        max-width: 785px;
+        margin-bottom: 20px;
+    }
+
+    #carousel-diapo {
+        height: 400px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .container-card, .card {
+        width: 230px;
+    }
+
+    .divider {
+        width: 45.6em;
+    }
+
+    .drapeau {
+        width: 220px;
+        height: 140px;
+    }
+
+    .carousel__container {
+        max-width: 740px;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    .fa, .fas {
+        position: relative;
+        right: 1em;
+    }
+
+    .nav__link {
+        width: 635px;
+        border-top: 1px solid #f8f8f8;
+    }
+
+    .nav__link--below {
+        width: 621px;
+    }
+
+    .ul-destinations {
+        margin: 0;
+    }
+
+    .ul-destinations.pays {
+        top: 115px;
+    }
+
+    .ul-destinations.book {
+        top: 75px;
+    }
+
+    #carousel-diapo {
+        height: 365px;
+    }
+
+    .carousel__container {
+        max-width: 680px;
+    }
+
+    .container-card, .card, .pres, .pays__container {
+        width: 428px;
+    }
+
+    #info_cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #sec-info {
+        height: 2080px;
+    }
+
+    .divider {
+        width: 26.75em;
+    }
+
+    .travel-container, .divider, .divider.travel-divider {
+        width: 22em;
+    }
+
+    .img-container {
+        flex-direction: column;
+    }
+
+    .pays__container {
+        height: 230px;
+        margin: 60px 10px;
+    }
+
+    .drapeau {
+        width: 418px;
+        height: 220px;
+    }
+
+    #faq {
+        height: 1110px;
+    }
+
+    .aboutUs, .whyUs, .pres.divider, .travel-container, .link-container {
+        width: 34em;
+    }
+
+    .faq-container {
+        flex-direction: column;
+    }
+
+    #navbar {
+        height: 420px;
+        max-height: 520px;
+    }
+
+    .first-drop {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 705px) {
+    .nav__link {
+        width: 578px;
+    }
+
+    .nav__link--below {
+        width: 564px;
+    }
+
+    #carousel-diapo {
+        height: 330px;
+    }
+
+    .carousel__container {
+        max-width: 620px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .nav__link {
+        width: 525px;
+    }
+
+    .nav__link--below {
+        width: 511px;
+    }
+
+    .carousel__container {
+        max-width: 560px;
+    }
+
+    #carousel-diapo {
+        height: 310px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .nav__link {
+        width: 465px;
+    }
+
+    .nav__link--below {
+        width: 451px;
+    }
+
+    .aboutUs, .whyUs, .divider, .travel-container, .link-container {
+        width: 26em;
+    }
+
+    #faq {
+        height: 1160px;
+    }
+
+    #carousel-diapo {
+        height: 270px;
+    }
+    .carousel__index--text{
+        height: 35px;
+    }
+    .carousel__index--para{
+        font-size: 10px;
+    }
+    .carousel__container {
+        max-width: 500px;
+    }
+
+    .footer__link {
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .nav__link {
+        width: 380px;
+    }
+
+    .nav__link--below {
+        width: 366px;
+    }
+
+    .carousel__container {
+        max-width: 470px;
+    }
+}
+
+@media screen and (max-width: 478px) {
+    #carousel-diapo {
+        height: 250px;
+    }
+
+    .carousel__container {
+        max-width: 430px;
+    }
+}
+
+@media screen and (max-width: 435px) {
+    .nav__link {
+        width: 330px;
+    }
+
+    .nav__link--below {
+        width: 316px;
+    }
+
+    .carousel__container {
+        max-width: 395px;
+    }
+
+    #carousel-diapo {
+        height: 240px;
+    }
+    .carousel__arrow--left, .carousel__arrow--right, .carousel__arrow--left:active, .carousel__arrow--right:active{
+        width: 75%;
+        margin-left: 2px;
+    }
+    .carousel__arrow--left:active, .carousel__arrow--right:active{
+        width: 38px;
+        height: 38px;
+    }
+    .prev, .next{
+        padding: 0;
+    }
+
+    .container-card, .card, .pres, .pays__container {
+        width: 360px;
+    }
+
+    .pays__container {
+        height: 210px;
+    }
+
+    .drapeau {
+        width: 350px;
+        height: 200px;
+    }
+
+    #faq {
+        height: 1300px;
+    }
+
+    .aboutUs, .whyUs, .divider, .travel-container {
+        width: 22em;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #carousel-diapo {
+        height: 220px;
+    }
+
+    .carousel__container {
+        max-width: 360px;
+    }
+
+    #footer {
+        height: 245px;
+    }
+
+    .link-container {
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+    }
+
+    .footer__link {
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav__link {
+        width: 280px;
+    }
+
+    .nav__link--below {
+        width: 266px;
+    }
+
+    .carousel__container {
+        max-width: 337px;
+    }
+
+    .container-card, .card, .pres, .pays__container {
+        width: 330px;
+    }
+
+    .pays__container {
+        height: 190px;
+    }
+
+    .drapeau {
+        width: 320px;
+        height: 180px;
+    }
+
+    #faq {
+        height: 1400px;
+    }
+
+    .aboutUs, .whyUs, .divider, .travel-container, .divider.faq-divider {
+        width: 17em;
+    }
+
+    .whyUs-img {
+        width: 55px;
+        height: 58px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .nav__link {
+        width: 255px;
+    }
+
+    .nav__link--below {
+        width: 241px;
+    }
+
+    #carousel-diapo {
+        height: 210px;
+    }
+
+    .carousel__container {
+        max-width: 310px;
+    }
+
+    #sec-info {
+        height: 2155px;
+    }
+
+    .container-card, .card, .pres, .pays__container {
+        width: 280px;
+    }
+
+    .drapeau {
+        width: 270px;
+    }
+}
